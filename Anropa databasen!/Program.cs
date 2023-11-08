@@ -63,7 +63,7 @@ namespace Anropa_databasen_
                                 {
                                     foreach (var customer in sortedQuery)
                                     {
-                                        Console.WriteLine($"Company name: {customer.CompanyName}\nCountry: {customer.Country}\nRegion: {customer.Region}\nPhone Number: {customer.Phone}");
+                                        Console.WriteLine($"Company name: {customer.CompanyName}\nCountry: {customer.Country}\nRegion: {customer.Region}\nPhone Number: {customer.Phone}\n{customer.Orders.Count}");
                                         Console.WriteLine();
                                     }
                                 }
@@ -94,7 +94,7 @@ namespace Anropa_databasen_
 
                                     foreach (var customer in query2)
                                     {
-                                        Console.WriteLine($"Company name: {customer.specificClient}\nCountry: {customer.Country}\nRegion: {customer.Region}\nPhone Number: {customer.Phone}");
+                                        Console.WriteLine($"Company name: {customer.specificClient}\nCountry: {customer.Country}\nRegion: {customer.Region}\nPhone Number: {customer.Phone}\n{customer.Orders.Count}");
                                         Console.WriteLine();
                                     }
                                 }
